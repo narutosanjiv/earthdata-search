@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '~> 4.1.1'
+gem 'rails', '~> 7.0.0'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -66,7 +66,7 @@ end
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets, :test do
-  gem 'sass-rails',   '~> 4.0.0'
+  gem 'sass-rails', '~> 6.0.0'
   gem 'coffee-script', :require => 'coffee_script'
   gem 'coffee-rails', '~> 4.0.0'
 
@@ -76,7 +76,7 @@ end
 gem 'jquery-rails'
 gem 'bourbon'
 gem 'knockoutjs-rails'
-gem 'figaro'
+gem 'figaro', '>= 1.0.0'
 
 gem 'delayed_job_active_record'
 gem 'daemons'
