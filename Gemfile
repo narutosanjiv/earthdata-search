@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '~> 4.1.1'
+gem 'rails', '~> 4.1.2'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -17,7 +17,7 @@ gem 'obfuscate_id', git: 'https://github.com/namick/obfuscate_id.git', ref: 'a89
 group :test do
   gem 'database_cleaner'
   gem 'factory_girl'
-  gem 'factory_girl_rails'
+  gem 'factory_girl_rails', '>= 4.5.0'
   gem 'capybara'
   # This is a revision which disables screenshots, one behind the disable-screenshots
   #  branch, which also tries (and fails) to avoid problems with concurrent test runs.
@@ -31,7 +31,7 @@ group :test do
 end
 
 group :development do
-  gem 'quiet_assets'
+  gem 'quiet_assets', '>= 1.0.3'
 
   # For dumping additional metadata stored in DatasetExtras and similar
   gem 'seed_dump'
@@ -44,7 +44,7 @@ end
 # Gems that are mostly used for testing but useful to have available via CLI
 group :development, :test do
   gem 'thin'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 2.99.0'
   gem 'colored'
   gem 'vcr'
   gem 'sqlite3'
@@ -66,17 +66,17 @@ end
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets, :test do
-  gem 'sass-rails',   '~> 4.0.0'
+  gem 'sass-rails', '~> 4.0.4'
   gem 'coffee-script', :require => 'coffee_script'
-  gem 'coffee-rails', '~> 4.0.0'
+  gem 'coffee-rails', '~> 4.1.0'
 
   gem 'uglifier', '>= 1.3.0'
 end
 
-gem 'jquery-rails'
-gem 'bourbon'
-gem 'knockoutjs-rails'
-gem 'figaro'
+gem 'jquery-rails', '>= 3.1.1'
+gem 'bourbon', '>= 3.2.3'
+gem 'knockoutjs-rails', '>= 3.4.0'
+gem 'figaro', '>= 1.0.0'
 
 gem 'delayed_job_active_record'
 gem 'daemons'
