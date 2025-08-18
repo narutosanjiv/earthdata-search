@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '~> 4.1.1'
+gem 'rails', '~> 7.1.5', '>= 7.1.5.2'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -34,7 +34,7 @@ group :development do
   gem 'quiet_assets'
 
   # For dumping additional metadata stored in DatasetExtras and similar
-  gem 'seed_dump'
+  gem 'seed_dump', '>= 3.2.4'
 end
 
 group :production do
@@ -76,9 +76,9 @@ end
 gem 'jquery-rails'
 gem 'bourbon'
 gem 'knockoutjs-rails'
-gem 'figaro'
+gem 'figaro', '>= 1.0.0'
 
-gem 'delayed_job_active_record'
+gem 'delayed_job_active_record', '>= 4.1.7'
 gem 'daemons'
 
 gem 'nokogiri'
