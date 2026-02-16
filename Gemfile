@@ -5,7 +5,7 @@ gem 'rails', '~> 4.1.1'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'faraday'
+gem 'faraday', '>= 2.14.1'
 gem 'faraday_middleware'
 gem 'multi_xml'
 gem 'toastr-rails'
